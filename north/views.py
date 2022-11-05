@@ -13,4 +13,7 @@ def nhome(request):
     print(params)
     return render(request,"kashmir.html",params)
 
+def productview(request, id):
+    product=nculture.objects.filter(id=id)
+    return render(request, "pview.html")
 

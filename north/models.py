@@ -22,13 +22,12 @@ def path_and_rename(instance, filename):
         return os.path.join(upload_to,str(instance.category), filename)
 
 class nculture(models.Model):
-#     # pid=models.AutoField()
+    pid=models.BigAutoField(primary_key=True)
     pname=models.TextField('PRODUCT NAME',max_length=30,default='')
-    # man_date= models.DateField()
     price=models.IntegerField(default=0)
     desc=models.CharField(max_length=300)
     image=models.ImageField(upload_to=path_and_rename,null=True,blank=True)
-    category = models.TextField('category',max_length=100, default = 'nullcategory')
+    category = models.TextField('category',max_length=100)
 
     def __str__(self):
         return self.pname

@@ -109,19 +109,21 @@
         <h3>Exquisite range of Bestseller Kashmiri handwoven Ferans .</h3>
         <!-- <ul class="carousel-indicators">          
         </ul> -->
-        
-        {% for i in product%}
-          <img class="feran-image" src='/media/static/{{i.category}}/{{i.image}}' alt="feran">
-          
-          {%endfor%}
-<!--           
+
+
+        {% for i in products%}
+          <img class="feran-image" src='/media/{{i.image}}' alt="feran">
+            <a href="cart/">ADD TO CART!</a>
+      
+          {% endfor %}
+       
+
+<!--           <
           <img class="feran-image" src="./../static/images/feran2.jpg" alt="feran">
 
           <img class="feran-image" src="./../static/images/feran3.jpg" alt="feran">
 
           <img class="feran-image" src="./../static/images/feran4.jpg" alt="feran"> -->
-
-          <a href="#" ><i class="fa-solid fa-circle-chevron-right"></i></a>
         </div>
    
 
