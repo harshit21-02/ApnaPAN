@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -6,11 +7,11 @@
   <title>TeamGroot</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="./../static/css/styles.css">
   <!-- CSS Stylesheets -->
   <!-- integarting bootstrap into css by cdn link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./../static\css\styleskashmir.css">
+  
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/b70f3ea85a.js" crossorigin="anonymous"></script>
@@ -25,15 +26,13 @@
 </head>
 
 <body>
-
-{% load static %}
-  
-<section class="colored-section" id="title">
+  {% load static %}
+  <section class="colored-section" id="title">
 
     <div class="container-fluid top">
       <!-- Nav Bar (from BootStrap documentation) -->
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">TeamGroot</a>
+        <a class="navbar-brand" href="">ApnaPAN</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,7 +56,10 @@
             </li>
 
         </nav>
-        
+
+
+
+
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6">
@@ -101,7 +103,8 @@
   </section>
 
 
-  <section class="colored-section" id="testimonials">
+  <section>
+
 
     
       <div class="products">
@@ -113,30 +116,62 @@
 
         {% for i in products%}
           <img class="feran-image" src='/media/{{i.image}}' alt="feran">
-            <a href="cart/">ADD TO CART!</a>
-      
+            <a href="cart/{{i.pid}}"><button>ADD TO CART!</button></a>
+            <a href="product/{{i.pid}}"><button>VIEW</button></a>
           {% endfor %}
        
 
 <!--           <
           <img class="feran-image" src="./../static/images/feran2.jpg" alt="feran">
+=======
+          <img class="feran-image" src="images/feran.jpg" alt="feran">
+>>>>>>> ef04d533e7c891e4df3f94f4b5a71739b864473a
 
-          <img class="feran-image" src="./../static/images/feran3.jpg" alt="feran">
+          <img class="feran-image" src="images/feran2.jpg" alt="feran">
 
+<<<<<<< HEAD
           <img class="feran-image" src="./../static/images/feran4.jpg" alt="feran"> -->
+        <!-- <div> -->
+<!-- ======= -->
+          <!-- <img class="feran-image" src="images/feran3.jpg" alt="feran">
+
+          <img class="feran-image" src="images/feran4.jpg" alt="feran">
+
+          <a href="#" ><i class="fa-solid fa-circle-chevron-right"></i></a>
         </div>
+        </div> -->
+<!-- >>>>>>> ef04d533e7c891e4df3f94f4b5a71739b864473a -->
    
 
   </section>
+  <br><br> <br><br>
 
 
-  <!-- Press -->
 
-  <section class="colored-section" id="press">
-    
+ <section class="pashmina">
+  <div class="pashmina">
+   <h1 class="pashmina-tagline">Explore our diverse range of Pashmina</h1>
+   <br>
+   <a href="#"><button type="button" class="btn btn-light">Shop now</button></a>
 
-  </section>
 
+  </div>
+
+ </section>
+ <br><br>
+
+ <section>
+   <div class="pashmina-collection">
+
+    <div>
+      <img class="pashmina-image" src="../static/images/pashmina-1.jpeg" alt="pashmina">
+      <img class="pashmina-image" src="../static/images/pashmina-2.jpeg" alt="pashmina">
+      <img class="pashmina-image" src="../static/images/pashmina-3.jpeg" alt="pashmina">
+      <img class="pashmina-image" src="../static/images/pashmina-4.jpeg" alt="pashmina">
+    </div>
+
+   </div>
+ </section>
 
   <!-- Pricing -->
 
@@ -147,21 +182,55 @@
     <p>Paper Machie and Khatamband work from the most trusted sellers of the valley.</p>
 
        <div class="artwork-container">
-        <div class="card artwork">
-          <img src="./../static/images/kashmiri1.JPEG" style="height: 200px;">
+         <div class="card artwork">
+          <img src="../static/images/kashmiri1.JPEG" style="height: 200px;">
             <button class="btn btn-lg btn-block btn-outline" type="button"> Paper Machie</button>
-        </div>
+         </div>
 
-        <div class="card artwork">
-          <img src="./../static/images/kashmiri2.jpg" style="height: 200px;">
+         <div class="card artwork">
+          <img src="../static/images/kashmiri2.jpg" style="height: 200px;">
             <button class="btn btn-lg btn-block btn-outline" type="button"> Copperware </button>
+         </div>
+
+         <div class="card artwork">
+          <img src="../static/images/kashmiri3.jpg" style="height: 200px;">
+            <button class="btn btn-lg btn-block btn-outline" type="button"> Namda</button>
+         </div>
+        </div>
+        
+        <div class="artwork-container">
+         <div class="card artwork">
+          <img src="../static/images/walnut-wood.jpeg" style="height: 200px;">
+            <button class="btn btn-lg btn-block btn-outline" type="button"> Walnut wood</button>
+         </div>
+
+        <div class="card artwork">
+          <img src="../static/images/skincare.jpeg" style="height: 200px;">
+            <button class="btn btn-lg btn-block btn-outline" type="button"> Skincare</button>
         </div>
 
         <div class="card artwork">
-          <img src="./../static/images/kashmiri3.jpg" style="height: 200px;">
-            <button class="btn btn-lg btn-block btn-outline" type="button"> Namda</button>
+          <img src="../static/images/honey.jpeg" style="height: 200px;">
+            <button class="btn btn-lg btn-block btn-outline" type="button"> Honey</button>
         </div>
       </div>
+
+      <div class="artwork-container">
+        <div class="card artwork">
+         <img src="../static/images/gourmet.jpeg" style="height: 200px;">
+           <button class="btn btn-lg btn-block btn-outline" type="button">Kashmir Gourmet</button>
+        </div>
+
+       <div class="card artwork">
+         <img src="../static/images/saffron.jpeg" style="height: 200px;">
+           <button class="btn btn-lg btn-block btn-outline" type="button"> Kashmiri Saffron</button>
+       </div>
+
+       <div class="card artwork">
+         <img src="../static/images/Kehwa.jpeg" style="height: 200px;">
+           <button class="btn btn-lg btn-block btn-outline" type="button"> Kehwa</button>
+       </div>
+     </div>
 
   </section>
 

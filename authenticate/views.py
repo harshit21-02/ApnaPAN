@@ -3,9 +3,14 @@ from django.contrib.auth import authenticate, login, logout, update_session_auth
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm
 from django.contrib import messages 
 from .forms import SignUpForm, EditProfileForm 
+from north.models import order
 # Create your views here.
 def home(request): 
+	if request.user.is_authenticated:
+		logout(request)
 	return render(request, 'authenticate/home.html', {})
+
+
 
 def login_user (request):
 	if request.method == 'POST': #if someone fills out form , Post it 
@@ -14,8 +19,11 @@ def login_user (request):
 		user = authenticate(request, username=username, password=password)
 		if user is not None:# if user exist
 			login(request, user)
+			products=order.objects.all()
+			params={'products': products}
+			print(len(products))
 			messages.success(request,('Youre logged in'))
-			return redirect('home') #routes to 'home' on successful login  
+			return render(request, 'authenticate/home.html', params)  
 		else:
 			messages.success(request,('Error logging in'))
 			return redirect('login') #re routes to login page upon unsucessful login

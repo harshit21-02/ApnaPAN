@@ -1,14 +1,35 @@
 {% extends 'authenticate/base.html' %}
 
 {% block content %}
-	
+
 <h1> Welcome to your selling account</h1>
 
 {% if user.is_authenticated %}
+<!-- {& csrf_token %} -->
 	<p>Name: {{user.first_name}} {{ user.last_name}}</p>
 	<p>Username: {{user.username}}</p>
-	
 	<p>Email: {{user.email}}</p>
+	<!-- <p>Email: {{user.email}}</p> -->
+
+	{% for i in products %}
+	<div 
+	
+	class="col-md-3"
+	style="width: 150px;
+	border-radius: 4%;
+	margin: 30px 5px 30px 5 px;">
+		<img width: 20; src='../../../media/{{i.image}}' alt="feran">
+	<br>
+	<p>{{i.pname}}</p>
+	<br>
+	<p>Rs. {{i.price}}</p>
+	<br>
+    </div>
+	<br>
+	<hr>
+	<hr>
+	<br>
+	{% endfor %}
 
 {% endif %}
 

@@ -21,6 +21,19 @@ def path_and_rename(instance, filename):
         filename = '{}.{}'.format(uuid4().hex, ext)
         return os.path.join(upload_to,str(instance.category), filename)
 
+
+class order(models.Model):
+    mid=models.AutoField(primary_key=True)
+    pid=models.IntegerField()
+    pname=models.TextField('PRODUCT NAME',max_length=30,default='')
+    price=models.IntegerField(default=0)
+    desc=models.CharField(max_length=300)
+    image=models.ImageField(upload_to=path_and_rename,null=True,blank=True)
+    category = models.TextField('category',max_length=100)
+
+    def __str__(self):
+        return self.pname
+
 class nculture(models.Model):
     pid=models.BigAutoField(primary_key=True)
     pname=models.TextField('PRODUCT NAME',max_length=30,default='')
@@ -31,3 +44,5 @@ class nculture(models.Model):
 
     def __str__(self):
         return self.pname
+
+

@@ -1,24 +1,42 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Sellers Portal</title>
-  </head>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Seller's Portal</title>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+    
+      <!-- CSS Stylesheets -->
+      <!-- integarting bootstrap into css by cdn link -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css">
+    
+      <!-- fontawesome -->
+      <script src="https://kit.fontawesome.com/b70f3ea85a.js" crossorigin="anonymous"></script>
+    
+      <!-- BootStrap Scripts -->
+      <!-- some features of bootsrap require javascript to work -->
+      <!-- check bootstrap's introduction page to find out -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </head>
   <body>
+  <section class="colored-section" id="title">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'home'  %}">apnaPAN</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+   <a class="navbar-brand" href="{% url 'home'  %}">ApnaPAN</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       
       {# Will know if user is logged in or not#}
@@ -46,8 +64,120 @@
      
     </ul>
     
+   </div>
+ </nav>
+  <!-- Title -->
+ <div class="row">
+  <div class="col-lg-6">
+    <h1 class="big-heading"><strong>Explore the Diversity of India</strong>.</h1>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i>Download</button>
   </div>
-</nav>
+  <div class="col-lg-6">
+    <img class="title-img" src="images/india-map.jpeg" alt="indian-map">
+  </div>
+ </div>
+
+ </div>
+</section>
+<style>
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5rem;
+}
+
+.container-fluid {
+  padding: 7% 12%;
+}
+
+  /* sections */
+.colored-section{
+  background-color: #ae5360;
+  color:#fff;
+}
+
+.top{
+  background-image: url("/images/kashmiri-girl.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.white-section{
+background-color: #fff;
+}
+
+/* Navigation bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: "bold";
+}
+
+.navbar-item {
+  padding: 0 18px;
+  font-family: "Montserrat-light";
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* title section */
+#title {
+  color: white;
+  text-align: left;
+}
+
+#title {
+  padding-left: 7%;
+  padding-top: 2%;
+}
+
+.container-fluid{
+  padding-left: 7%;
+  padding-top: 5%;
+}
+
+.title-img {
+  width: 60%;
+  position: absolute;
+  right: 30%;
+  border-radius: 3%;
+}
+
+</style>
       <br/>
       <div class ="container">
         {% if messages %}

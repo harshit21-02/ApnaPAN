@@ -23,5 +23,9 @@ app_name="north"
 
 urlpatterns = [
     path('',views.nhome,name="nhome"),
+    path('cart/<int:pid>',views.cart,name="cart"),
+     path("product/<int:pid>", views.productView, name="ProductView"),
+
+
     # path('north/',include('north.urls', namespace='north')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

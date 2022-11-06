@@ -1,4 +1,3 @@
-
 body {
   font-family: "Montserrat";
   text-align: center;
@@ -34,6 +33,13 @@ p {
 .colored-section{
   background-color: #ae5360;
   color:#fff;
+}
+
+.top{
+  background-image: url("../images/kashmiri-girl.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 .white-section{
@@ -121,19 +127,74 @@ background-color: #fff;
   margin: 20px;
 }
 
-#press {
-  background-color: #ef8172;
-  padding-bottom: 3%;
+.feran-image{
+  width: 210px;
+  border-radius: 4%;
+  margin: 30px;
+}
+
+.feran-image:hover{
+opacity: 0.6;
+transform: scale(0.8);
+}
+
+.pashmina{
+  background-image: url(../images/pashmina-bg.jpeg) ;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 900px;
+  color: white;
+  text-align: center;
+}
+
+.pashmina-tagline{
+padding-top: 30.8% !important;
+text-decoration-line: overline;
+}
+
+.pashmina-tagline:hover{
+  transform: scale(1.1);
+}
+
+.pashmina-image{
+  width: 250px;
+  border-radius: 4%;
+  margin: 30px;
+}
+
+.pashmina-image:hover{
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+.artwork{
+  width: 350px;
+  margin: 25px;
+}
+
+.artwork-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card:hover{
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+#products {
+ padding-bottom: 400px;
 }
 
 .press-logo {
   width: 200px;
   height: 230px;
-  margin: 20px 20px 50px;
-  border-radius: 10%;
+  margin: 20px 20px 30px;
+  border-radius: 20%;
 }
 .press-logo:hover {
   opacity: 0.5;
+  transform: scale(1.1);
 }
 
 
