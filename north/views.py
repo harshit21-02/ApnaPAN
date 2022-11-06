@@ -14,10 +14,10 @@ def nhome(request):
     return render(request,"kashmir.html",params)
 
 def productView(request, pid):
-    product=nculture.objects.filter(pid=pid)
+    product=nculture.objects.get(pid=pid)
     print(product)
-    print("h")
-    return render(request, "prodView.html")
+    params={'pp': product}
+    return render(request, "product.html",params)
 
 def cart(request, pid):
     product=nculture.objects.get(pid=pid)

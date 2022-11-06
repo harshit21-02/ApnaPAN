@@ -10,7 +10,7 @@
   <!-- CSS Stylesheets -->
   <!-- integarting bootstrap into css by cdn link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../static/css/pstyles.css">
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/b70f3ea85a.js" crossorigin="anonymous"></script>
@@ -73,9 +73,10 @@
       <!-- Title -->
       
         <div>
-          <img class="product-img" src="images/walnut-wood.jpeg" alt="walnut wood">
+          <img class="product-img" src="../static/images/walnut-wood.jpeg" alt="walnut wood">
         </div>
-        <button type="button" class="btn btn-dark btn-lg download-button product-btn"><i class="fa-solid fa-cart-shopping"></i>Add to card</button>
+        <a href="http://127.0.0.1:8000/north/cart/{{pp.pid}}"><button type="button" class="btn btn-dark btn-lg download-button product-btn"><i class="fa-solid fa-cart-shopping"></i>Add to card</button></a>
+      </a>  
         <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-solid fa-pen-to-square"></i>Customise</button>
         <h2 class="know-me" style="text-align:center; text-decoration:overline;">Know about me</h2><br>
         <div class="know-text" style="background-color: rgb(222, 189, 189); color:black; border-radius:5px; padding:5%">
