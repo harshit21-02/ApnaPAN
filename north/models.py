@@ -30,6 +30,7 @@ class order(models.Model):
     desc=models.CharField(max_length=300)
     image=models.ImageField(upload_to=path_and_rename,null=True,blank=True)
     category = models.TextField('category',max_length=100)
+    
 
     def __str__(self):
         return self.pname
@@ -41,6 +42,7 @@ class nculture(models.Model):
     desc=models.CharField(max_length=300)
     image=models.ImageField(upload_to=path_and_rename,null=True,blank=True)
     category = models.TextField('category',max_length=100)
+    #  category = models.TextField('category',max_length=100)
 
     def __str__(self):
         return self.pname
