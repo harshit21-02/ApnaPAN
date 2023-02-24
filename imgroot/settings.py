@@ -127,7 +127,7 @@ MEDIA_URL = '/media/' # Public URL at the browser
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+STATIC_ROOT =  BASE_DIR/ "staticf"
 STATICFILES_DIRS =[
     BASE_DIR/ "static" ,
 ]

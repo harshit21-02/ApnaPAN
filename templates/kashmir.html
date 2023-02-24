@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 
 <html>
@@ -7,11 +8,11 @@
   <title>ApnaPAN</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./../static/css/styles.css">
+  
   <!-- CSS Stylesheets -->
   <!-- integarting bootstrap into css by cdn link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
+  <link rel="stylesheet" type="text/css" href="..\static\css\kashmir.css">
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/b70f3ea85a.js" crossorigin="anonymous"></script>
@@ -22,177 +23,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <nav>
-    <div class="wrapper">
-      <div class="logo"><a href="#">ApnaPAN</a></div>
-      <input type="radio" name="slider" id="menu-btn">
-      <input type="radio" name="slider" id="close-btn">
-      <ul class="nav-links">
-        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li>
-          <a href="#" class="desktop-item">Men</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Men</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-               </div>
-              <div class="row">
-                <header>Clothing</header>
-                <ul class="mega-links">
-                  <li><a href="#">Phirans</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Pashmina</header>
-                <ul class="mega-links">
-                  <li><a href="#">Plain Pashmina</a></li>
-                  <li><a href="#">Modern Design Pashmina</a></li>
-                  <li><a href="#">Kani Pashmina</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Woolen Wraps</header>
-                <ul class="mega-links">
-                  <li><a href="#">Contemporary Woolen Wraps</a></li>
-                  <li><a href="#">Plain woolen wraps</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Women</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Women</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-               </div>
-              <div class="row">
-                <header>Winter Clothing</header>
-                <ul class="mega-links">
-                  <li><a href="#">Winter Suits</a></li>
-                  <li><a href="#">Phirans</a></li>
-                  <li><a href="#">Ponchos</a></li>
-                  <li><a href="#">Woolen Jackets</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Pashmina</header>
-                <ul class="mega-links">
-                  <li><a href="#">Plain Pashminas</a></li>
-                  <li><a href="#">Kani Pashminas</a></li>
-                  <li><a href="#">Reversible Pashminas</a></li>
-                  <li><a href="#">Modern Design Pashminas</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Woolen Wraps</header>
-                <ul class="mega-links">
-                  <li><a href="#">Contemporary Woolen Wraps</a></li>
-                  <li><a href="#">Plain woolen wraps</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Beauty</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Beauty</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                </div>
-              <div class="row">
-                <header>Organic Beauty</header>
-                <ul class="mega-links">
-                  <li><a href="#">Natural Beauty</a></li>
-                  <li><a href="#">Natural Oils</a></li>
-                </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Decor</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Decor</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-              </div>
-              <div class="row">
-                <header>Accent</header>
-                <ul class="mega-links">
-                  <li><a href="#">Graphics</a></li>
-                  <li><a href="#">Vectors</a></li>
-                  <li><a href="#">Business cards</a></li>
-                  <li><a href="#">Custom logo</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Flooring</header>
-                <ul class="mega-links">
-                  <li><a href="#">Personal Email</a></li>
-                  <li><a href="#">Business Email</a></li>
-                  <li><a href="#">Mobile Email</a></li>
-                  <li><a href="#">Web Marketing</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Furnishing</header>
-                <ul class="mega-links">
-                  <li><a href="#">Fabric</a></li>
-                  <li><a href="#">Bed Spreads</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Shop By</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Mega Menu</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-              </div>
-              <div class="row">
-                <header>Embroidery</header>
-                <ul class="mega-links">
-                  <li><a href="#">Airi Embroidery</a></li>
-                  <li><a href="#">Sozni Embroidery</a></li>
-                  <li><a href="#">Tilli Embroidery</a></li>
-                  <li><a href="#">Zari Embroidery</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Lifestyle</header>
-                <ul class="mega-links">
-                  <li><a href="#">Pashmina</a></li>
-                  <li><a href="#">Woolen</a></li>
-                  <li><a href="#">Torquoise</a></li>
-                  <li><a href="#">Silver</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li><a href="#">Sale</a></li>
-        <li><a href="blog/">Blog</a></li>
-      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-    </div>
-  </nav>
 </head>
 
-<body>
-
-
-
-  <section class="colored-section" id="title">  
-</head>
 
 <body>
 
@@ -244,44 +76,23 @@
 
 
   <section>
-
-
-    
       <div class="products">
         <br>
         <h3>Exquisite range of Bestseller Kashmiri handwoven Ferans .</h3>
         <!-- <ul class="carousel-indicators">          
         </ul> -->
 
-
         {% for i in products%}
-          <img class="feran-image" src='/media/{{i.image}}' alt="feran">
+        <div>          <img class="feran-image" src='/media/{{i.image}}' alt="feran">
             <a href="cart/{{i.pid}}"><button>ADD TO CART!</button></a>
             <a href="product/{{i.pid}}"><button>VIEW</button></a>
+          </div>
+
           {% endfor %}
+      </div>
        
 
-<!--           <
-          <img class="feran-image" src="./../static/images/feran2.jpg" alt="feran">
-=======
-          <img class="feran-image" src="images/feran.jpg" alt="feran">
->>>>>>> ef04d533e7c891e4df3f94f4b5a71739b864473a
 
-          <img class="feran-image" src="images/feran2.jpg" alt="feran">
-
-<<<<<<< HEAD
-          <img class="feran-image" src="./../static/images/feran4.jpg" alt="feran"> -->
-        <!-- <div> -->
-<!-- ======= -->
-          <!-- <img class="feran-image" src="images/feran3.jpg" alt="feran">
-
-          <img class="feran-image" src="images/feran4.jpg" alt="feran">
-
-          <a href="#" ><i class="fa-solid fa-circle-chevron-right"></i></a>
-        </div>
-        </div> -->
-<!-- >>>>>>> ef04d533e7c891e4df3f94f4b5a71739b864473a -->
-   
 
   </section>
   <br><br> <br><br>
@@ -386,7 +197,7 @@
       <button class=" download-button btn btn-lg btn-light" type="button"> <i class="fa-brands fa-google-play"></i>Download</button>
     </div>
   </section>
-
+</body>
 
   <!-- Footer -->
 
@@ -402,8 +213,6 @@
     </div>
   </footer>
 
-<script src="content/js/jquery.min.js"></script>
-<script src="content/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.dropdown-toggle').dropdown();

@@ -29,5 +29,5 @@ def cart(request, pid):
     pdata.category=product.category
     pdata.image=product.image
     pdata.save()
-
-    return render(request, "cart.html")
+    params={'pp': product}
+    return render(request, "cart.html",params)
